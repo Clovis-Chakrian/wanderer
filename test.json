@@ -1,0 +1,27 @@
+{
+  "mais_vendidos": [
+    {
+      "nome": "sapato",
+      "preço": 100,
+      "tipo": "esportivo"
+    },
+    {
+      "nome": "tenis",
+      "preço": 150,
+      "tipo": "casual"
+    }
+  ],
+
+  "lançamentos": [
+    {
+      "nome": "sapato",
+      "preço": 100,
+      "tipo": "esportivo"
+    },
+    {
+      "nome": "tenis",
+      "preço": 150,
+      "tipo": "casual"
+    }
+  ]
+}
