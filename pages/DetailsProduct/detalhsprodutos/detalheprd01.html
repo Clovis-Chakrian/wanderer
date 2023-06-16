@@ -17,35 +17,44 @@
 <body>
   <header id="header">
     <div id="header-top">
-      <div></div>
-      <h1>wanderer</h1>
-      <div>
-        <a href="">
-          <i class='bx bx-user bx-md'></i>
-        </a>
+      <div class="grid-column"></div>
+      <h1 onclick={addElement()}>wanderer</h1>
+      <div id="menu-container">
+        <div id="menu" class="user-options">
+          <i class='bx bx-x bx-lg' onclick={toggleMenu()}></i>
+          <a href="../../Conta/conta.html">
+            <i class='bx bx-user bx-md'></i>
+            <p>Conta</p>
+          </a>
 
-        <a href="">
-          <i class='bx bx-like bx-md'></i>
-        </a>
+          <a href="../../Favoritos/favoritos.html">
+            <i class='bx bx-like bx-md'></i>
+            <p>Favoritos</p>
+          </a>
 
-        <a href="">
-          <i class='bx bx-shopping-bag bx-md'></i>
-        </a>
+          <a href="../../CarPage/carrinho.html">
+            <i class='bx bx-shopping-bag bx-md'></i>
+            <p>Carrinho</p>
+          </a>
+        </div>
+        <div onclick={toggleMenu()}>
+          <i class='bx bx-menu bx-md'></i>
+        </div>
       </div>
     </div>
 
     <nav>
       <ul>
         <li>
-          <a href="">Casual</a>
+          <a href="../../CasualSection/casualsection.html">Casual</a>
         </li>
 
         <li>
-          <a href="">Social</a>
+          <a href="../../SocialSection/socialsection.html">Social</a>
         </li>
 
         <li>
-          <a href="">Esportivo</a>
+          <a href="../../EsportivoSection/esportivosection.html">Esportivo</a>
         </li>
       </ul>
     </nav>
@@ -84,8 +93,7 @@
           <div class="content">
             <h6>Legacy Classic</h6>
             <h1>Edição Única</h1>
-            <P>Apresentamos o elegante sapato formal masculino de couro, uma obra-prima em design e sofisticação. Esse sapato é a combinação perfeita de estilo clássico e artesanato de alta qualidade, ideal para ocasiões formais e eventos especiais.Feito de couro legítimo, o sapato emana uma aura de refinamento e durabilidade. O couro de alta qualidade não apenas confere uma aparência sofisticada, mas também oferece resistência e conforto excepcionais. Cada detalhe é cuidadosamente trabalhado, desde a costura precisa até os acabamentos impecáveis, refletindo a atenção aos detalhes e o compromisso com a excelência.
-              O forro interno é suave ao toque e oferece um ambiente acolhedor para os pés, permitindo que você os use por longas horas sem desconforto. Além disso, a palmilha almofadada proporciona um amortecimento adicional, garantindo conforto a cada passo.
+            <P>Apresentamos o elegante sapato formal masculino de couro, uma obra-prima em design e sofisticação. Esse sapato é a combinação perfeita de estilo clássico e artesanato de alta qualidade, ideal para ocasiões formais e eventos especiais.Feito de couro legítimo, o sapato emana uma aura de refinamento e durabilidade. 
             </P>
             <span class="price">R$160</span>
             <span class=""></span>
@@ -95,7 +103,7 @@
                 <span>0</span>
                 <div class="plus"><i class='bx bx-plus'></i></div>
               </div>
-              <div class="button"><i class='bx bx-shopping-bag'>Comprar</i></div>
+              <div class="button"><i id="t" class='bx bx-shopping-bag'>Comprar</i></div>
             </div>
           </div>
         </div>
@@ -107,7 +115,7 @@
         <div class="card">
 
           <div class="userdetails">
-            <img class="user" SRC="images/users/user1.png" alt="">
+            <img class="user" SRC="user03.jpg" alt="">
 
           </div>
 
@@ -129,7 +137,7 @@
 
         <div class="card">
           <div class="userdetails">
-            <img class="user" SRC="images/users/user1.png" alt="">
+            <img class="user" SRC="user2.jpeg" alt="">
 
           </div>
 

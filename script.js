@@ -7,6 +7,11 @@ function toggleMenu() {
 
 for (product in productsElements) {
   productsElements[product].addEventListener('click', () => {
-    window.location.href = ''
+    const urlCompleta = window.location.href;
+    let urlPartida = urlCompleta.split('pages');
+    urlPartida[1] = 'pages/DetailsProduct/detalhsprodutos/detalheprd01.html';
+    const novaUrl = `${urlPartida[0]}${urlPartida[1]}`;
+
+    window.location.href = novaUrl;
   })
 }
