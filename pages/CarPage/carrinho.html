@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <script async src="carrinho.js"></script>
+    <script src="../../script.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="header-top">
+            <div class="grid-column"></div>
+            <h1>wanderer</h1>
+            <div id="menu-container">
+                <div id="menu" class="user-options">
+                    <i class='bx bx-x bx-lg' onclick={toggleMenu()}></i>
+                    <a href="../CarPage/carrinho.html">
+                        <i class='bx bx-user bx-md'></i>
+                        <p>Conta</p>
+                    </a>
+
+                    <a href="../Favoritos/favoritos.html">
+                        <i class='bx bx-like bx-md'></i>
+                        <p>Favoritos</p>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bx-shopping-bag bx-md'></i>
+                        <p>Carrinho</p>
+                    </a>
+                </div>
+                <div onclick={toggleMenu()}>
+                    <i class='bx bx-menu bx-md'></i>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../CasualSection/casualsection.html">Casual</a>
+                </li>
+
+                <li>
+                    <a href="../SocialSection/socialsection.html">Social</a>
+                </li>
+
+                <li>
+                    <a href="../EsportivoSection/esportivosection.html">Esportivo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-title">Sua Sacola</div>
+        <div class="content">
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto </th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="produtos">
+                            <td>
+                                <div class="product"><img src="imagens/pd2/pd02.jpg" width=100px; alt="product">
+                                    <div class="info">
+                                        <div class="name">Nome</div>
+                                        <div class="category">Categoria</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="precoproduto">R$120</span></td>
+                            <td>
+                                <div class="qty">
+                                    <button onclick="diminuir('count1')"><i class="bx bx-minus"></i></button>
+                                    <span id="count1">1</span>
+                                    <button onclick="aumentar('count1')"><i class="bx bx-plus"></i></button>
+                                </div>
+                            </td>
+                            <td>R$120</td>
+                            <td><button class="remove"><i class='bx bx-x'></button></i></td>
+                        </tr>
+
+                        <tr class="produtos">
+                            <td>
+                                <div class="product"><img src="imagens/pd2/pd02.jpg" width=100px; alt="product">
+                                    <div class="info">
+                                        <div class="name">Nome</div>
+                                        <div class="category">Categoria</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="precoproduto">R$120</span></td>
+                            <td>
+                                <div class="qty">
+                                    <button onclick="diminuir('count2')"><i class="bx bx-minus"></i></button>
+                                    <span id="count2">1</span>
+                                    <button onclick="aumentar('count2')"><i class="bx bx-plus"></i></button>
+                                </div>
+                            </td>
+                            <td>R$120</td>
+                            <td><button class="remove"><i class='bx bx-x'></button></i></td>
+                        </tr>
+
+                        <tr class="produtos">
+                            <td>
+                                <div class="product"><img src="imagens/pd2/pd02.jpg" width=100px; alt="product">
+                                    <div class="info">
+                                        <div class="name">Nome</div>
+                                        <div class="category">Categoria</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="precoproduto">R$120</span></td>
+                            <td>
+                                <div class="qty">
+                                    <button onclick="diminuir('count3')"><i class="bx bx-minus"></i></button>
+                                    <span id="count3">1</span>
+                                    <button onclick="aumentar('count3')"><i class="bx bx-plus"></i></button>
+                                </div>
+                            </td>
+                            <td>R$120</td>
+                            <td><button class="remove"><i class='bx bx-x'></button></i></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+            <div class="aside">
+
+                <div class="box">
+                    <header>Resumo Da Compra</header>
+                    <div class="info">
+                        <div><span>Subtotal</span><span>R$480</span></div>
+                        <div><span>Frete</span><span>Gratuito</span></div>
+                        <div><button>Adicionar Cupom de Desconto</button></div>
+                        <footer>
+                            <span class="valor-total-compra">Total</span>
+                            <span>R$360</span>
+                        </footer>
+                    </div>
+                </div>
+                <button>Finalizar Compra</button>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="spacefooter"></div>
+            <div class="linefooter"></div>
+            <div class="row-footer">
+
+                <div class="footer-col">
+                    <h4>Horário de Funcionamento</h4>
+                    <ul>
+                        <li>Dias Úteis: 8:00-18:30</li>
+                        <li>Sábados e Feriados:</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <ul>
+                        <li>
+                            <div class="medias-socias">
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#"> <i class="fa fa-instagram"></i> </a>
+                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                            </div>
+                        </li>
+                        <li><i class='bx bx-envelope'>Info@example.com</i></li>
+                        <li><i class='bx bx-phone'></i>1800 123 4567</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Se subescreva!</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <button>subscrever</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="linefooter"></div>
+            <div class="spacefooter">
+                <p>© 2022 Trucking deliver. All Rights Reserved.. </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

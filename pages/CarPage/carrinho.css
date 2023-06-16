@@ -1,0 +1,203 @@
+@import url('../../styles/global.css');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button{
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+body > main{
+    background-color: #fff;
+    padding: 0 30px 30px;
+
+}
+
+body > main .page-title{
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+body > main .content{
+    display: grid;
+    align-items:center ;
+}
+section{
+    flex: 1
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead tr{
+    border-bottom: 3px solid #eee;
+}
+
+table thead tr th{
+    text-align: left;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #666;
+
+}
+table tbody tr{
+    border-bottom: 3px solid #eee;
+    &:last-child{
+        border: 0;
+    }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 35px 45px;
+} 
+table tbody tr td{
+    padding: 30px 0;
+
+}
+.product{
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+img{
+    border-radius: 4px;
+}
+table tbody tr td .info{
+    margin-left:20px ;
+}
+table tbody tr td .info .name{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+table tbody tr td .info .category{
+    color: #666;
+}
+.qty{
+    background: #eee;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+    
+}
+.qty span{
+        margin: 0 10px;
+}
+.qty button{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+    }
+
+.qty button:hover {
+        background: #ddd;
+ }
+      
+
+.remove{
+background-color: #eee;
+border: 0;
+width: 30px;
+height: 30px;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+}
+.remove:hover {
+    background: #ddd;
+  }
+  .aside {
+   width: 80vw;
+   height: auto;
+   
+   padding: 35px 45px;
+   justify-content: center;
+  }
+.aside .box{
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: #eee;
+    color: #222;
+    border-radius: 18px;
+}
+.aside > button{
+    border: 0;
+    padding: 15px 0;
+    color: white;
+    background: #452103;
+    display: block;
+    width:100%;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    justify-content: center;
+
+}
+.aside .box header{
+    padding: 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid#ccc;
+}
+.aside .box .info{
+    padding: 20px;
+    font-size: 16px;
+}
+.aside .box footer{
+    padding: 15px 20px;
+    background: #ddd;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.aside .box .info > div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+}
+.aside .box .info > div:last-child {
+    margin: 0;
+  }
+.aside .box .info button {
+    color: #28a745;
+    background: transparent;
+    border: 8px;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .aside > button:hover {
+    background: #452103b8;
+  }
+  
