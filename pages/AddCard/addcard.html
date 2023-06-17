@@ -1,151 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="card.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>telele</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="addcard.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<title>wanderer | Adicionar cartão</title>
 </head>
+
 <body>
-  <header id="header">
-    <div id="header-top">
-      <h1>wanderer</h1>
-      <div>
-        <a href="">
-          <i class='bx bx-user bx-md'></i>
-        </a>
+	<header id="header">
+		<div id="header-top">
+			<div class="grid-column"></div>
+			<h1 onclick={addElement()}>wanderer</h1>
+			<div id="menu-container">
+				<div id="menu" class="user-options">
+					<i class='bx bx-x bx-lg' onclick={toggleMenu()}></i>
+					<a href="../Conta/conta.html">
+						<i class='bx bx-user bx-md'></i>
+						<p>Conta</p>
+					</a>
 
-        <a href="">
-          <i class='bx bx-like bx-md'></i>
-        </a>
+					<a href="../Favoritos/favoritos.html">
+						<i class='bx bx-like bx-md'></i>
+						<p>Favoritos</p>
+					</a>
 
-        <a href="">
-          <i class='bx bx-shopping-bag bx-md'></i>
-        </a>
-      </div>
-    </div>
+					<a href="../CarPage/carrinho.html">
+						<i class='bx bx-shopping-bag bx-md'></i>
+						<p>Carrinho</p>
+					</a>
+				</div>
+				<div onclick={toggleMenu()}>
+					<i class='bx bx-menu bx-md'></i>
+				</div>
+			</div>
+		</div>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="">Casual</a>
-        </li>
+		<nav>
+			<ul>
+				<li>
+					<a href="../CasualSection/casualsection.html">Casual</a>
+				</li>
 
-        <li>
-          <a href="">Social</a>
-        </li>
+				<li>
+					<a href="../SocialSection/socialsection.html">Social</a>
+				</li>
 
-        <li>
-          <a href="">Esportivo</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+				<li>
+					<a href="../EsportivoSection/esportivosection.html">Esportivo</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-<main>
+	<main>
 
-<div class="container">
-    <div class="boxdetails2">
-        <div class="boxinformation">
-            <h3 > Selecione o Cartão</h3>
-            <div class="boxinteracao">
-                <i class='bx bxs-credit-card-front'></i><p>MasterCard final 4242</p>
-            </div>
-            <div class="boxinteracao">
-                <i class='bx bxs-credit-card-front'></i><p>VISA Debit final 2894</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="boxdetails">
-        <div class="boxinformation">
-            <h3>Adicionar Cartão</h3>
-             <p>Nomedo Titular</p>
-            <div class="boxinteracao">
-                <label></label><input class="campo_nome" type="text">
-            </div>
-        </div>
-        <div class="boxinformation">
-            <p>
-                 Número do Cartão
-            </p>
-            <div class="boxinteracao">
-                <label></label><input class="campo_nome" type="text">
-            </div>
-        </div>
-        <div class="fresc">
-            <div class="chat">
-                <p>Ano de Expiração</p>
-                <div class="blo">
-                    <label></label><input class="campo_nome" type="text">
-                </div>
-            </div>
-            <div class="chat">
-                <p>CVV</p>
-                <div class="blo">
-                    <label></label><input class="campo_nome" type="text">
+		<div class="container">
+			<div class="boxdetails2">
+				<div class="boxinformation">
+					<h3> Selecione o Cartão</h3>
+					<div class="boxinteracao">
+						<i class='bx bxs-credit-card-front'></i>
+						<p>MasterCard final 4242</p>
+					</div>
+					<div class="boxinteracao">
+						<i class='bx bxs-credit-card-front'></i>
+						<p>VISA Debit final 2894</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="boxdetails">
+				<div class="boxinformation">
+					<h3>Adicionar Cartão</h3>
+					<p>Nomedo Titular</p>
+					<div class="boxinteracao">
+						<label></label><input class="campo_nome" type="text">
+					</div>
+				</div>
+				<div class="boxinformation">
+					<p>
+						Número do Cartão
+					</p>
+					<div class="boxinteracao">
+						<label></label><input class="campo_nome" type="text">
+					</div>
+				</div>
+				<div class="fresc">
+					<div class="chat">
+						<p>Ano de Expiração</p>
+						<div class="blo">
+							<label></label><input class="campo_nome" type="text">
+						</div>
+					</div>
+					<div class="chat">
+						<p>CVV</p>
+						<div class="blo">
+							<label></label><input class="campo_nome" type="text">
 
-                </div>
-            </div>
-        </div>
-       
-        <button>Adicionar Cartão</button>
-    </div>
-</div>
+						</div>
+					</div>
+				</div>
 
-</main>
+				<button>Adicionar Cartão</button>
+			</div>
+		</div>
+
+	</main>
 
 
-        <footer>
-            <div class="container-footer">
-                <div class="spacefooter"></div>
-                <div class="linefooter"></div>
-                <div class="row-footer">
-                    
-                <div class="footer-col">
-                    <h4>Horário de Funcionamento</h4>
-                    <ul>
-                        <li>Dias Úteis: 8:00-18:30</li>
-                        <li>Sábados e Feriados:</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                            <ul>
-                                <li>
-                                    <div class="medias-socias">
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                        <a href="#"> <i class="fa fa-instagram"></i> </a>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </div>
-                                </li>
-                                <li><i class='bx bx-envelope'>Info@example.com</i></li>
-                                <li><i class='bx bx-phone'></i>1800 123 4567</li>
-                            </ul>
-                        </div>
-            
-                <div class="footer-col">
-                    <h4>Se subescreva!</h4>
-                    <div class="form-sub">
-                        <form>
-                            <input type="email" placeholder="Digite o seu e-mail" required>
-                            <button>subscrever</button>
-                        </form>
-                    </div>
+	<footer>
+		<div class="container-footer">
+			<div class="spacefooter"></div>
+			<div class="linefooter"></div>
+			<div class="row-footer">
 
-                </div>
-            
-            </div>
-            <div class="linefooter"></div>
-            <div class="spacefooter">
-                <p>© 2022 Trucking deliver. All Rights Reserved.. </p>
-            </div>
-        </div>
-    </footer>
+				<div class="footer-col">
+					<h4>Horário de Funcionamento</h4>
+					<ul>
+						<li>Dias Úteis: 8:00-18:30</li>
+						<li>Sábados e Feriados:</li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<ul>
+						<li>
+							<div class="medias-socias">
+								<a href="#"> <i class="fa fa-facebook"></i> </a>
+								<a href="#"> <i class="fa fa-instagram"></i> </a>
+								<a href="#"> <i class="fa fa-twitter"></i> </a>
+								<a href="#"> <i class="fa fa-linkedin"></i> </a>
+							</div>
+						</li>
+						<li><i class='bx bx-envelope'>Info@example.com</i></li>
+						<li><i class='bx bx-phone'></i>1800 123 4567</li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h4>Se subescreva!</h4>
+					<div class="form-sub">
+						<form>
+							<input type="email" placeholder="Digite o seu e-mail" required>
+							<button>subscrever</button>
+						</form>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="linefooter"></div>
+			<div class="spacefooter">
+				<p>© 2022 Trucking deliver. All Rights Reserved.. </p>
+			</div>
+		</div>
+	</footer>
 </body>
+
 </html>

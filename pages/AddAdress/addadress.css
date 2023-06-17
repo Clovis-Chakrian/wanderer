@@ -1,73 +1,81 @@
-*{
+@import url('../../styles/global.css');
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #F9F9F9;
 }
+
 .container {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
-  }
-.boxdetails{
-display: flex;
-flex-direction:column;
-justify-content: center;
-align-items: center;
-padding: 32px;
-gap: 16px;
-width: 1000px;
-height: 900px;
-background: #FFFFFF;
-border-radius: 15px;
-margin-bottom: 20%;
-margin-top: 20%;
+    align-items: center;
+}
+
+.boxdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+    width: 1000px;
+    height: 900px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin-bottom: 20%;
+    margin-top: 20%;
 
 }
-.boxinformation{
+
+.boxinformation {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 8px;
     gap: 10px;
-    
+
     width: 90%;
     height: 112px;
 }
-.boxinformation p{
+
+.boxinformation p {
     width: 171px;
-height: 30px;
+    height: 30px;
 
-font-family: 'Cabin';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-letter-spacing: -0.02em;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
 
-/* Font/Placeholder */
+    /* Font/Placeholder */
 
-color: rgba(26, 31, 22, 0.5);
+    color: rgba(26, 31, 22, 0.5);
 
 
 }
-.boxinteracao{
+
+.boxinteracao {
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 16px;
-gap: 8px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
 
-width: 100%;
-height: 58px;
-background: #FFFFFF;
-box-shadow: 0px 4px 16px rgba(26, 31, 22, 0.15);
-border-radius: 13px;
+    width: 100%;
+    height: 58px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(26, 31, 22, 0.15);
+    border-radius: 13px;
 }
-input.campo_nome
-{
+
+input.campo_nome {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: 500;
@@ -75,16 +83,17 @@ input.campo_nome
     line-height: 26px;
     height: 74px;
     width: 100%;
-  border: none;
-  
+    border: none;
+
 }
-button{
+
+button {
     border: 0;
     padding: 8px 24px;
     color: white;
     background: #452103;
     display: block;
-    width:100%;
+    width: 100%;
     height: 80px;
     border-radius: 10px;
     gap: 8px;
@@ -94,7 +103,7 @@ button{
     cursor: pointer;
     margin-top: 50px;
 }
+
 button:hover {
     background: #452103b8;
-  }
-  
+}

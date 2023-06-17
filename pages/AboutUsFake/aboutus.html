@@ -5,40 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>Detalhe do Produto</title>
+    <link rel="stylesheet" href="about.css">
+    <title>wanderer | About Us</title>
 </head>
 <body>
   <header id="header">
     <div id="header-top">
-      <h1>wanderer</h1>
-      <div>
-        <a href="">
-          <i class='bx bx-user bx-md'></i>
-        </a>
+      <div class="grid-column"></div>
+      <h1 onclick={addElement()}>wanderer</h1>
+      <div id="menu-container">
+        <div id="menu" class="user-options">
+          <i class='bx bx-x bx-lg' onclick={toggleMenu()}></i>
+          <a href="../Conta/conta.html">
+            <i class='bx bx-user bx-md'></i>
+            <p>Conta</p>
+          </a>
 
-        <a href="">
-          <i class='bx bx-like bx-md'></i>
-        </a>
+          <a href="../Favoritos/favoritos.html">
+            <i class='bx bx-like bx-md'></i>
+            <p>Favoritos</p>
+          </a>
 
-        <a href="">
-          <i class='bx bx-shopping-bag bx-md'></i>
-        </a>
+          <a href="../CarPage/carrinho.html">
+            <i class='bx bx-shopping-bag bx-md'></i>
+            <p>Carrinho</p>
+          </a>
+        </div>
+        <div onclick={toggleMenu()}>
+          <i class='bx bx-menu bx-md'></i>
+        </div>
       </div>
     </div>
 
     <nav>
       <ul>
         <li>
-          <a href="">Casual</a>
+          <a href="../CasualSection/casualsection.html">Casual</a>
         </li>
 
         <li>
-          <a href="">Social</a>
+          <a href="../SocialSection/socialsection.html">Social</a>
         </li>
 
         <li>
-          <a href="">Esportivo</a>
+          <a href="../EsportivoSection/esportivosection.html">Esportivo</a>
         </li>
       </ul>
     </nav>
